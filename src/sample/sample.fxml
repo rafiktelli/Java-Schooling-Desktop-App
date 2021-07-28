@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onDragDetected="#logout" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button layoutX="37.0" layoutY="31.0" mnemonicParsing="false" onAction="#addNotion" prefHeight="160.0" prefWidth="180.0" text="Ajouter Notion" textAlignment="CENTER" textOverrun="LEADING_ELLIPSIS">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font></Button>
+      <Button layoutX="37.0" layoutY="207.0" mnemonicParsing="false" onAction="#gererQuiz" prefHeight="160.0" prefWidth="180.0" text="Gérer Quiz">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font></Button>
+      <Button layoutX="332.0" layoutY="31.0" mnemonicParsing="false" onAction="#addQuiz" onDragDetected="#addQuiz" prefHeight="160.0" prefWidth="180.0" text="Ajouter Quiz">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font></Button>
+      <Button layoutX="337.0" layoutY="207.0" mnemonicParsing="false" onAction="#affQ" prefHeight="160.0" prefWidth="170.0" text="Afficher Quiz">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font></Button>
+      <Button layoutX="556.0" mnemonicParsing="false" onAction="#logout" prefHeight="44.0" prefWidth="44.0" text="Logout">
+         <font>
+            <Font name="System Bold" size="9.0" />
+         </font>
+         <textFill>
+            <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#8a4444" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+   </children>
+</AnchorPane>
